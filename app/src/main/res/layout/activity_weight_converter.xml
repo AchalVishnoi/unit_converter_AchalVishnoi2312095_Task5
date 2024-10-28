@@ -18,6 +18,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight/Mass"
+            android:textAlignment="center"
+            android:textColor="@color/skyBlue"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07"
+            tools:ignore="MissingConstraints">
+
+
+        </TextView>
+
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
@@ -58,7 +78,9 @@
                 android:elevation="20dp"
 
 
-                tools:targetApi="p">
+                tools:targetApi="p"
+                >
+
 
 
             </Spinner>
@@ -105,7 +127,8 @@
                 android:elevation="20dp"
 
 
-                tools:targetApi="p">
+                tools:targetApi="p"
+                android:outlineAmbientShadowColor="@color/black">
 
 
             </Spinner>
@@ -113,13 +136,14 @@
 
         </LinearLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/back"
 
             android:layout_width="89.73dp"
-            android:layout_height="44.58dp"
+            android:layout_height="43.58dp"
             android:layout_marginTop="52dp"
             android:background="@drawable/rounded_back_button"
+
             android:text="Back"
             android:textColor="@color/skyBlue"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -127,8 +151,30 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            app:layout_constraintVertical_bias="0.325"
-            />
+            app:layout_constraintVertical_bias="0.315"
+
+            tools:ignore="HardcodedText">
+
+        </ImageButton>
+
+        <TextView
+
+            android:text="Back"
+            android:textColor="@color/skyBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back"
+            tools:ignore="MissingConstraints"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:textAlignment="center"
+
+            android:textSize="18sp">
+
+        </TextView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

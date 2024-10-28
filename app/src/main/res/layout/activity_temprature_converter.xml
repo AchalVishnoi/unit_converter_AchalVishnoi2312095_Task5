@@ -5,6 +5,185 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tempratureConverter">
+    tools:context=".weightConverter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temprature"
+            android:textAlignment="center"
+            android:textColor="@color/skyBlue"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07"
+            tools:ignore="MissingConstraints">
+
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24"
+            tools:ignore="MissingConstraints">
+
+
+            <EditText
+                android:id="@+id/upperTemp"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/border"
+                android:hint="Temprature"
+                android:padding="12dp"
+                android:textColor="@color/skyBlue"
+                tools:ignore="Suspicious0dp">
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/Tempsp1"
+                android:layout_width="124.04dp"
+                android:layout_height="28dp"
+                android:background="@drawable/spinner_corner_radious"
+
+                android:elevation="20dp"
+
+
+                tools:targetApi="p"
+                >
+
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.26"
+            tools:ignore="MissingConstraints">
+
+
+            <EditText
+                android:id="@+id/LowerTemp"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:hint="Temprature"
+                android:padding="12dp"
+                android:textColor="@color/skyBlue"
+                tools:ignore="Suspicious0dp">
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/Tempsp2"
+                android:layout_width="124.04dp"
+                android:layout_height="28dp"
+                android:background="@drawable/spinner_corner_radious"
+
+                android:elevation="20dp"
+
+
+                tools:targetApi="p"
+                android:outlineAmbientShadowColor="@color/black">
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/back3"
+
+            android:layout_width="89.73dp"
+            android:layout_height="43.58dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/rounded_back_button"
+
+            android:text="Back"
+            android:textColor="@color/skyBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.315"
+
+            tools:ignore="HardcodedText">
+
+        </ImageButton>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textColor="@color/skyBlue"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/back3"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.498"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back3"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@
             android:layout_height="29dp"
             android:text="Select a Unit"
             android:textAlignment="center"
-            android:textColor="#d5fafd"
+            android:textColor="@color/skyBlue"
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +89,7 @@
                         android:layout_gravity="center"
                         android:text="Weight/Mass"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -133,7 +133,7 @@
                         android:layout_gravity="center"
                         android:text="Volume"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -141,6 +141,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/TempImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -171,7 +172,7 @@
                         android:layout_gravity="center"
                         android:text="Tempurature"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp"
                         tools:ignore="HardcodedText,SpUsage">
 
@@ -224,7 +225,7 @@
                         android:layout_gravity="center"
                         android:text="Length"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -268,7 +269,7 @@
                         android:layout_gravity="center"
                         android:text="Speed"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -306,7 +307,7 @@
                         android:layout_gravity="center"
                         android:text="Area"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp"
                         tools:ignore="HardcodedText,SpUsage">
 
@@ -356,7 +357,7 @@
                         android:layout_gravity="center"
                         android:text="Weight/Mass"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -399,7 +400,7 @@
                         android:layout_gravity="center"
                         android:text="Volume"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -437,7 +438,7 @@
                         android:layout_gravity="center"
                         android:text="Tempurature"
                         android:textAlignment="center"
-                        android:textColor="#d5fafd"
+                        android:textColor="@color/skyBlue"
                         android:textSize="15dp">
 
                     </TextView>
@@ -449,23 +450,66 @@
 
         </LinearLayout>
 
-        <Button
+<!--        <Button-->
+<!--            android:layout_width="115.79dp"-->
+<!--            android:layout_height="44.58dp"-->
+<!--            android:text="History"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:circularflow_radiusInDP="14dp"-->
+<!--            android:elevation="15px"-->
+<!--             android:background="@drawable/rounded_back_button"-->
+
+<!--            app:layout_constraintHorizontal_bias="0.498"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.802"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--        </Button>-->
+
+        <ImageButton
+
+
+            android:id="@+id/imageButton"
             android:layout_width="115.79dp"
             android:layout_height="44.58dp"
-            android:text="History"
+
+            android:layout_marginBottom="144dp"
+
+            android:background="@drawable/rounded_back_button"
+            android:textColor="@color/skyBlue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:circularflow_radiusInDP="14dp"
-            android:elevation="15px"
-             android:background="@drawable/rounded_back_button"
+            app:layout_constraintHorizontal_bias="0.498"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText">
+
+        </ImageButton>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="History"
+            android:textAlignment="center"
+
+            android:textColor="@color/skyBlue"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+
+            app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.802"
+            app:layout_constraintTop_toTopOf="@+id/imageButton"
             tools:ignore="MissingConstraints">
 
-        </Button>
+        </TextView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

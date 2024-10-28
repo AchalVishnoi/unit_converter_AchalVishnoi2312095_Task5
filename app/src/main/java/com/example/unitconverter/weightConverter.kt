@@ -15,6 +15,7 @@ import androidx.core.widget.doOnTextChanged
 import android.content.Intent
 import android.view.LayoutInflater
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 
 class weightConverter : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -83,7 +84,7 @@ class weightConverter : AppCompatActivity(), AdapterView.OnItemSelectedListener 
 
         }
 
-        var b1:Button=findViewById(R.id.back);
+        var b1:ImageButton=findViewById(R.id.back);
 
         title = "KotlinApp"
 
