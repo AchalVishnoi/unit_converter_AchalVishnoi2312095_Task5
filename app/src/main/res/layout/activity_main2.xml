@@ -58,6 +58,7 @@
                 tools:ignore="MissingConstraints,RtlHardcoded">
 
                 <LinearLayout
+                    android:id="@+id/WeightImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -69,7 +70,8 @@
                         android:layout_margin="10dp"
                         app:cardBackgroundColor="@color/Lightgray"
                         app:cardCornerRadius="12dp"
-                        app:cardElevation="15dp">
+                        app:cardElevation="15dp"
+                        >
 
 
                         <ImageView
