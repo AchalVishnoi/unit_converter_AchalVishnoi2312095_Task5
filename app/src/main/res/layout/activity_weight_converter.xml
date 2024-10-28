@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -40,10 +41,10 @@
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
 
-                android:hint="Weight"
                 android:background="@drawable/border"
-                android:textColor="@color/skyBlue"
+                android:hint="Weight"
                 android:padding="12dp"
+                android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
 
             </EditText>
@@ -66,11 +67,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical"
 
+            android:orientation="vertical"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -86,10 +88,10 @@
                 android:layout_width="200dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/skyBlue"
-                 android:hint="Weight"
                 android:background="@drawable/border"
+                android:hint="Weight"
                 android:padding="12dp"
+                android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
 
             </EditText>
@@ -108,9 +110,32 @@
 
             </Spinner>
 
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/back"
+
+            android:layout_width="89.73dp"
+            android:layout_height="44.58dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/rounded_back_button"
+            android:text="Back"
+            android:textColor="@color/skyBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.325"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

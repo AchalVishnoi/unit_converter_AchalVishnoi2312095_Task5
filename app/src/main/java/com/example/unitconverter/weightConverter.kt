@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.doOnTextChanged
 import android.content.Intent
 import android.view.LayoutInflater
+import android.widget.Button
 import android.widget.LinearLayout
 
 class weightConverter : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -80,6 +81,15 @@ class weightConverter : AppCompatActivity(), AdapterView.OnItemSelectedListener 
                 ep1.setText(convertedUnit.toString())
             }
 
+        }
+
+        var b1:Button=findViewById(R.id.back);
+
+        title = "KotlinApp"
+
+        b1.setOnClickListener {
+            val intent = Intent(this@weightConverter, MainActivity2::class.java)
+            startActivity(intent)
         }
 
 
