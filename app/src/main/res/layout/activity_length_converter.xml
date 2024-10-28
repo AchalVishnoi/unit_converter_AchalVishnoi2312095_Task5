@@ -22,7 +22,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Temperature"
+            android:text="Length"
             android:textAlignment="center"
             android:textColor="@color/skyBlue"
             android:textSize="24sp"
@@ -56,13 +56,13 @@
 
 
             <EditText
-                android:id="@+id/upperTemp"
+                android:id="@+id/upperLen"
                 android:layout_width="200dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
 
                 android:background="@drawable/border"
-                android:hint="Temperature"
+                android:hint="Length"
                 android:padding="12dp"
                 android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
@@ -70,7 +70,7 @@
             </EditText>
 
             <Spinner
-                android:id="@+id/Tempsp1"
+                android:id="@+id/Lensp1"
                 android:layout_width="124.04dp"
                 android:layout_height="28dp"
                 android:background="@drawable/spinner_corner_radious"
@@ -106,12 +106,12 @@
 
 
             <EditText
-                android:id="@+id/LowerTemp"
+                android:id="@+id/LowerLen"
                 android:layout_width="200dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/border"
-                android:hint="Temperature"
+                android:hint="Length"
                 android:padding="12dp"
                 android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
@@ -119,7 +119,7 @@
             </EditText>
 
             <Spinner
-                android:id="@+id/Tempsp2"
+                android:id="@+id/Lensp2"
                 android:layout_width="124.04dp"
                 android:layout_height="28dp"
                 android:background="@drawable/spinner_corner_radious"
@@ -137,7 +137,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/back3"
+            android:id="@+id/back4"
 
             android:layout_width="89.73dp"
             android:layout_height="43.58dp"
@@ -167,13 +167,13 @@
             android:textColor="@color/skyBlue"
             android:textSize="18sp"
 
-            app:layout_constraintBottom_toBottomOf="@+id/back3"
+            app:layout_constraintBottom_toBottomOf="@+id/back4"
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintHorizontal_bias="0.498"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/back3"
+            app:layout_constraintTop_toTopOf="@+id/back4"
             tools:ignore="MissingConstraints">
 
         </TextView>

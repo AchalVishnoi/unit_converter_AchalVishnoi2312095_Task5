@@ -34,11 +34,26 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this@MainActivity2, weightConverter::class.java)
             startActivity(intent)
         }
+
+        var b2:LinearLayout=findViewById(R.id.volImg);
+
+
+        b2.setOnClickListener {
+            val intent = Intent(this@MainActivity2, volumeConverter::class.java)
+            startActivity(intent)
+        }
         var b3:LinearLayout=findViewById(R.id.TempImg);
 
 
         b3.setOnClickListener {
             val intent = Intent(this@MainActivity2, tempratureConverter::class.java)
+            startActivity(intent)
+        }
+        var b4:LinearLayout=findViewById(R.id.lenImg);
+
+
+        b4.setOnClickListener {
+            val intent = Intent(this@MainActivity2, LengthConverter::class.java)
             startActivity(intent)
         }
 

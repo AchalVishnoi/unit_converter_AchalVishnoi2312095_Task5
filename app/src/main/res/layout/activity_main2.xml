@@ -97,6 +97,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/volImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -170,7 +171,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:text="Tempurature"
+                        android:text="Temperature"
                         android:textAlignment="center"
                         android:textColor="@color/skyBlue"
                         android:textSize="15dp"
@@ -195,6 +196,7 @@
                 tools:ignore="MissingConstraints,RtlHardcoded">
 
                 <LinearLayout
+                    android:id="@+id/lenImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
