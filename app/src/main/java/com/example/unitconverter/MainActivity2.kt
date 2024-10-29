@@ -56,6 +56,13 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this@MainActivity2, LengthConverter::class.java)
             startActivity(intent)
         }
+        var b5:LinearLayout=findViewById(R.id.speedImg);
+
+
+        b5.setOnClickListener {
+            val intent = Intent(this@MainActivity2, speedConverter::class.java)
+            startActivity(intent)
+        }
 
 
     }
