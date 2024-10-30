@@ -6,15 +6,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/white_halo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
        
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
 
+        >
+
+
+        <!--        <Button-->
+<!--            android:layout_width="115.79dp"-->
+<!--            android:layout_height="44.58dp"-->
+<!--            android:text="History"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:circularflow_radiusInDP="14dp"-->
+<!--            android:elevation="15px"-->
+<!--             android:background="@drawable/rounded_back_button"-->
+
+<!--            app:layout_constraintHorizontal_bias="0.498"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.802"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--        </Button>-->
 
         <TextView
             android:id="@+id/textView"
@@ -27,10 +49,10 @@
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.159"
+            app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.067"
+            app:layout_constraintVertical_bias="0.09"
             tools:ignore="MissingConstraints">
 
 
@@ -40,9 +62,10 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="96dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView"
             tools:ignore="ExtraText,MissingConstraints">
@@ -70,8 +93,7 @@
                         android:layout_margin="10dp"
                         app:cardBackgroundColor="@color/Lightgray"
                         app:cardCornerRadius="12dp"
-                        app:cardElevation="15dp"
-                        >
+                        app:cardElevation="15dp">
 
 
                         <ImageView
@@ -280,6 +302,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/timeCImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -298,7 +321,7 @@
                             android:layout_width="60dp"
                             android:layout_height="70dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/i5">
+                            android:src="@drawable/i6">
 
                         </ImageView>
 
@@ -308,7 +331,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:text="Area"
+                        android:text="Time"
                         android:textAlignment="center"
                         android:textColor="@color/skyBlue"
                         android:textSize="15dp"
@@ -320,174 +343,28 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal"
-
-
-                tools:ignore="MissingConstraints,RtlHardcoded">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        app:cardBackgroundColor="@color/Lightgray"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="15dp">
-
-
-                        <ImageView
-                            android:layout_width="89dp"
-                            android:layout_height="89dp"
-                            android:src="@drawable/i20">
-
-                        </ImageView>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:text="Weight/Mass"
-                        android:textAlignment="center"
-                        android:textColor="@color/skyBlue"
-                        android:textSize="15dp">
-
-                    </TextView>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="89dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:padding="20dp"
-                        app:cardBackgroundColor="@color/Lightgray"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="15dp">
-
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="89dp"
-                            android:layout_marginStart="17dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/i7"
-
-                            >
-
-                        </ImageView>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:text="Volume"
-                        android:textAlignment="center"
-                        android:textColor="@color/skyBlue"
-                        android:textSize="15dp">
-
-                    </TextView>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="89dp"
-                        android:layout_height="89dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        app:cardBackgroundColor="@color/Lightgray"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="15dp">
-
-
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/i12">
-
-                        </ImageView>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:text="Tempurature"
-                        android:textAlignment="center"
-                        android:textColor="@color/skyBlue"
-                        android:textSize="15dp">
-
-                    </TextView>
-                </LinearLayout>
-
-
-            </LinearLayout>
-
 
         </LinearLayout>
-
-<!--        <Button-->
-<!--            android:layout_width="115.79dp"-->
-<!--            android:layout_height="44.58dp"-->
-<!--            android:text="History"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:circularflow_radiusInDP="14dp"-->
-<!--            android:elevation="15px"-->
-<!--             android:background="@drawable/rounded_back_button"-->
-
-<!--            app:layout_constraintHorizontal_bias="0.498"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.802"-->
-<!--            tools:ignore="MissingConstraints">-->
-
-<!--        </Button>-->
 
         <ImageButton
 
 
             android:id="@+id/imageButton"
-            android:layout_width="115.79dp"
-            android:layout_height="44.58dp"
-
-            android:layout_marginBottom="144dp"
+            android:layout_width="89.73dp"
+            android:layout_height="43.58dp"
+            android:layout_marginBottom="172dp"
 
             android:background="@drawable/rounded_back_button"
+            android:text="Back"
             android:textColor="@color/skyBlue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+
+
             app:layout_constraintHorizontal_bias="0.498"
-
-
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="HardcodedText">
 
         </ImageButton>
@@ -497,7 +374,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="History"
+            android:text="Back"
             android:textAlignment="center"
 
             android:textColor="@color/skyBlue"

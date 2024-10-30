@@ -9,10 +9,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.view.LayoutInflater
+import android.widget.ImageButton
 import android.widget.LinearLayout
 
 class MainActivity2 : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -63,6 +64,23 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this@MainActivity2, speedConverter::class.java)
             startActivity(intent)
         }
+        var b6:LinearLayout=findViewById(R.id.timeCImg);
+
+
+        b6.setOnClickListener {
+            val intent = Intent(this@MainActivity2, TimeConverter::class.java)
+            startActivity(intent)
+        }
+
+        var back:ImageButton=findViewById(R.id.imageButton);
+
+
+        back.setOnClickListener {
+            val intent = Intent(this@MainActivity2, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
 
     }

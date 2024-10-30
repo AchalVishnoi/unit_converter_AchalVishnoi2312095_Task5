@@ -35,10 +35,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
 
 
-                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView1"
-                app:layout_constraintVertical_bias="0.019"
+                app:layout_constraintVertical_bias="0.08"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
@@ -47,13 +46,13 @@
                 android:layout_height="226dp"
                 android:layout_centerInParent="true"
 
-                android:src="@drawable/i3"
+                android:src="@drawable/logo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.398"
+                app:layout_constraintVertical_bias="0.383"
                 tools:ignore="ContentDescription,MissingConstraints">
 
             </ImageView>

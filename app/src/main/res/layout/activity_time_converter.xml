@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".weightConverter"
-    android:background="@color/gray"
+    tools:context=".TimeConverter" android:background="@color/gray"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -60,13 +59,13 @@
 
 
             <EditText
-                android:id="@+id/uppersp"
+                android:id="@+id/upperTim"
                 android:layout_width="200dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
 
                 android:background="@drawable/border"
-                android:hint="Speed"
+                android:hint="Time"
                 android:padding="12dp"
                 android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
@@ -74,10 +73,8 @@
             </EditText>
 
             <Spinner
-                android:id="@+id/spsp1"
-                android:minWidth="124.04dp"
-
-                android:layout_width="wrap_content"
+                android:id="@+id/tisp1"
+                android:layout_width="124.04dp"
                 android:layout_height="28dp"
                 android:background="@drawable/spinner_corner_radious"
 
@@ -112,12 +109,12 @@
 
 
             <EditText
-                android:id="@+id/Lowersp"
+                android:id="@+id/LowerTim"
                 android:layout_width="200dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/border"
-                android:hint="Length"
+                android:hint="Time"
                 android:padding="12dp"
                 android:textColor="@color/skyBlue"
                 tools:ignore="Suspicious0dp">
@@ -125,10 +122,8 @@
             </EditText>
 
             <Spinner
-                android:id="@+id/spsp2"
-                android:minWidth="124.5dp"
-
-                android:layout_width="wrap_content"
+                android:id="@+id/tisp2"
+                android:layout_width="124.04dp"
                 android:layout_height="28dp"
                 android:background="@drawable/spinner_corner_radious"
 
@@ -145,7 +140,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/back5"
+            android:id="@+id/back6"
 
             android:layout_width="89.73dp"
             android:layout_height="43.58dp"
@@ -175,13 +170,13 @@
             android:textColor="@color/skyBlue"
             android:textSize="18sp"
 
-            app:layout_constraintBottom_toBottomOf="@+id/back5"
+            app:layout_constraintBottom_toBottomOf="@+id/back6"
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintHorizontal_bias="0.498"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/back5"
+            app:layout_constraintTop_toTopOf="@+id/back6"
             tools:ignore="MissingConstraints">
 
         </TextView>
